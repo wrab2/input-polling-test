@@ -80,6 +80,8 @@ int main() {
 		glfwTerminate();
 		return -1;
 	}
+	glfwMakeContextCurrent(window);
+	glfwSwapBuffers(window);
 	glfwSetCursorPosCallback(window, mouse_cursor_callback);
 	glfwSetKeyCallback(window, key_callback);
 
